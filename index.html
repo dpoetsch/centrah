@@ -4,30 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Centrah - Agência de Marketing de Influência</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header & Navegação -->
-    <header>
-    <div class="container nav-container">
-        <img class="logo" src="https://i.postimg.cc/qMXc7SGX/logo1.jpg" alt="Logo Centrah">
-        <ul class="nav-links">
-            <li><a href="#inicio">Início</a></li>
-            <li><a href="#servicos">O que fazemos</a></li>
-            <li><a href="#sobre">Quem somos</a></li>
-            <li><a href="#cases">Cases</a></li>
-            <li><a href="#contato" id="contato-link">Contato</a></li>
-        </ul>
+<header>
+  <div class="container nav-container">
+    <a href="#inicio">
+      <img class="logo" src="https://i.postimg.cc/CLT6WCz9/Clipboard-03-23-2025-01.jpg" alt="Logo Centrah">
+    </a>
+
+    <!-- Botão hamburguer -->
+    <div class="menu-toggle" id="menu-toggle">
+      <i class="fas fa-bars"></i>
     </div>
+
+    <!-- Menu principal -->
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#servicos">O que fazemos</a></li>
+      <li><a href="#sobre">Quem somos</a></li>
+      <li><a href="#portfolio">Cases</a></li>
+      <li><a href="#contato" id="contato-link">Contato</a></li>
+    </ul>
+  </div>
 </header>
 
 <!-- Hero Section -->
 <section class="hero" id="inicio">
     <div class="container hero-content">
        <div class="hero-text">
-    <h1>CONECTAMOS MARCAS E INFLUENCIADORES PARA IMPACTAR O MUNDO DIGITAL</h1>
-    <p class="hero-description">A Centralh é a ponte entre sua marca e os criadores de conteúdo que vão elevar suas campanhas a outro nível.</p>
+    <h1>Somos uma agência especializada em marketing de influência</h1>
+    <p class="hero-description">Na Centrah o nosso negócio é transformar influência em resultado — unindo a experiência que temos em marketing com a vivência na criação de conteúdo.</p>
     <button class="btn">Conheça Nossos Serviços</button>
 </div>
        <div class="phone-mockup">
@@ -49,8 +59,7 @@
     <section class="section" id="servicos">
         <div class="container">
             <div class="section-title">
-                <h2>Nossos Serviços</h2>
-                <p>Oferecemos soluções completas para conectar sua marca com os influenciadores certos</p>
+                <h2>O que fazemos</h2>
             </div>
             <div class="services">
                 <div class="service-card">
@@ -98,12 +107,126 @@
             </div>
         </div>
     </section>
+  
+  <section class="section" id="portfolio">
+    <div class="container">
+        <div class="section-title">
+            <h2>Co-criações</h2>
+        </div>
+
+<div class="work-grid">
+    <!-- Banrisul -->
+    <div class="work-card">
+        <div class="work-media">
+            <img src="https://i.postimg.cc/QxwJWjr5/0322.png" alt="Banricompras">
+            <div class="work-stats">
+                <div class="platform-icon">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <div class="metric-badge">
+                    <i class="fas fa-eye"></i>
+                    <span>3.5M</span>
+                </div>
+                <div class="metric-badge">
+                    <i class="fas fa-heart"></i>
+                    <span>15K</span>
+                </div>
+            </div>
+        </div>
+        <div class="work-caption">
+            <h3>Banricompras Premiadо</h3>
+            <p>Banrisul • Campanha Digital</p>
+        </div>
+    </div>
+
+    <!-- Bauducco -->
+    <div class="work-card">
+      <div class="work-media bauducco-image">
+            <img src="https://i.postimg.cc/J7TqMb6p/0322-1.png" alt="Bauducco">
+            <div class="work-stats">
+                <div class="platform-icon">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <div class="platform-icon">
+                    <i class="fab fa-tiktok"></i>
+                </div>
+                <div class="metric-badge">
+                    <i class="fas fa-eye"></i>
+                    <span>12.9M</span>
+                </div>
+                <div class="metric-badge">
+                    <i class="fas fa-heart"></i>
+                    <span>55K</span>
+                </div>
+            </div>
+        </div>
+        <div class="work-caption">
+            <h3>Campanha Especial</h3>
+            <p>Bauducco • Conteúdo Viral</p>
+        </div>
+    </div>
+
+    <!-- Trem do Pampa -->
+    <div class="work-card">
+<div class="work-media trem-pampa-image">
+    <img src="https://i.postimg.cc/W1Z6Gx2y/0322-2.png" alt="Trem do Pampa">
+            <div class="work-stats">
+                <div class="platform-icon">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <div class="platform-icon">
+                    <i class="fab fa-tiktok"></i>
+                </div>
+                <div class="metric-badge">
+                    <i class="fas fa-eye"></i>
+                    <span>2.6M</span>
+                </div>
+                <div class="metric-badge">
+                    <i class="fas fa-heart"></i>
+                    <span>210K</span>
+                </div>
+            </div>
+        </div>
+        <div class="work-caption">
+            <h3>Trem do Pampa Experience</h3>
+            <p>Santana do Livramento • Turismo</p>
+        </div>
+    </div>
+
+    <!-- Americanas -->
+    <div class="work-card">
+<div class="work-media americanas-image">
+            <img src="https://i.postimg.cc/wT7kv7ng/0322-3.png" alt="Americanas">
+            <div class="work-stats">
+                <div class="platform-icon">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <div class="platform-icon">
+                    <i class="fab fa-tiktok"></i>
+                </div>
+                <div class="metric-badge">
+                    <i class="fas fa-eye"></i>
+                    <span>871K</span>
+                </div>
+                <div class="metric-badge">
+                    <i class="fas fa-heart"></i>
+                    <span>11K</span>
+                </div>
+            </div>
+        </div>
+        <div class="work-caption">
+            <h3>Ovos de Páscoa</h3>
+            <p>Americanas • Campanha Sazonal</p>
+        </div>
+    </div>
+</div>
+</section>
 
 <!-- Seção Quem Somos -->
 <section class="section" id="sobre">
     <div class="container">
         <div class="section-title">
-            <h2>Lideranças</h2>
+            <h2>Quem somos</h2>
 
         </div>
 
@@ -115,7 +238,7 @@
                     <img src="https://i.postimg.cc/DZ2fr7p5/1742236324644.jpg" alt="Alexandre Laybauer" class="round-img">
                 </div>
                 <h3 class="leader-name">Alexandre Laybauer</h3>
-                <p class="leader-role">Co-fundador | Diretor de Estratégia</p>
+                <p class="leader-role">Co-fundador | Diretor de Planejamento e Estratégia</p>
                 <div class="leader-bio">
                     <p>Com mais de 15 anos de experiência em estratégia de comunicação, branding e planejamento de marketing, já trabalhou com marcas como Sicredi, iPlace, Unimed, Shopping Bourbon, Hertz, Farmácias Panvel, Lojas Pompéia e PUCRS. Especialista na construção de marcas e no desenvolvimento de estratégias orientadas a dados, define os KPIs e direcionamentos estratégicos junto às agências e clientes. Formado em Publicidade e Propaganda pela UFRGS.</p>
                 </div>
@@ -136,47 +259,11 @@
     </div>
 </section>
 
-    <!-- Cases de Sucesso -->
-    <section class="section" id="cases">
-        <div class="container">
-            <div class="section-title">
-                <h2>Cocriações</h2>
-            </div>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
-                <div style="background-color: white; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
-                    <img src="/api/placeholder/400/250" alt="Case 1" style="width: 100%;">
-                    <div style="padding: 25px;">
-                        <h3 style="margin-bottom: 15px;">Campanha Nacional de Moda</h3>
-                        <p style="margin-bottom: 15px;">Conectamos uma marca de moda com 15 influenciadores de diferentes nichos, gerando mais de 5 milhões de impressões e aumento de 43% nas vendas online.</p>
-                        <a href="#" style="color: var(--primary-color); font-weight: 500; text-decoration: none;">Ver case completo →</a>
-                    </div>
-                </div>
-                <div style="background-color: white; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
-                    <img src="/api/placeholder/400/250" alt="Case 2" style="width: 100%;">
-                    <div style="padding: 25px;">
-                        <h3 style="margin-bottom: 15px;">Lançamento de Produto Tech</h3>
-                        <p style="margin-bottom: 15px;">Estratégia com micro-influenciadores do nicho de tecnologia que resultou em 12 mil novos leads qualificados e 200% de ROI para a marca.</p>
-                        <a href="#" style="color: var(--primary-color); font-weight: 500; text-decoration: none;">Ver case completo →</a>
-                    </div>
-                </div>
-                <div style="background-color: white; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
-                    <img src="/api/placeholder/400/250" alt="Case 3" style="width: 100%;">
-                    <div style="padding: 25px;">
-                        <h3 style="margin-bottom: 15px;">Campanha para Startup</h3>
-                        <p style="margin-bottom: 15px;">Conectamos uma fintech com influenciadores do mundo financeiro, gerando mais de 80 mil novos downloads do app em apenas um mês.</p>
-                        <a href="#" style="color: var(--primary-color); font-weight: 500; text-decoration: none;">Ver case completo →</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Contato -->
     <section class="section contact" id="contato">
         <div class="container">
             <div class="section-title">
                 <h2>Entre em Contato</h2>
-                <p>Vamos conversar sobre como podemos impulsionar sua marca</p>
             </div>
             <div class="contact-content">
                 <div class="contact-form">
@@ -201,85 +288,77 @@
                         <button type="submit" class="btn" style="width: 100%;">Enviar Mensagem</button>
                     </form>
                 </div>
-                <div class="contact-info">
-                    <h3>Informações de Contato</h3>
-                    <div class="contact-detail">
-                        <div class="contact-icon">📱</div>
-                        <p>+55 (11) 99999-9999</p>
-                    </div>
-                    <div class="contact-detail">
-                        <div class="contact-icon">✉️</div>
-                        <p>contato@centrah.com.br</p>
-                    </div>
-                    <div class="contact-detail">
-                        <div class="contact-icon">📍</div>
-                        <p>Av. Paulista, 1000 - São Paulo, SP</p>
-                    </div>
-                    <div class="contact-detail">
-                        <div class="contact-icon">⏰</div>
-                        <p>Segunda a Sexta: 9h às 18h</p>
-                    </div>
-                    <div>
-                        <h4 style="margin: 30px 0 15px;">Siga-nos</h4>
-                        <div class="social-links">
-                            <a href="#"><span>FB</span></a>
-                            <a href="#"><span>IG</span></a>
-                            <a href="#"><span>LI</span></a>
-                            <a href="#"><span>TW</span></a>
-                        </div>
-                    </div>
-                </div>
+               <div class="contact-info">
+  <h3>Informações de Contato</h3>
+  <div class="contact-detail">
+    <div class="contact-icon"><i class="fas fa-phone"></i></div>
+    <p>+55 (11) 99999-9999</p>
+  </div>
+  <div class="contact-detail">
+    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+    <p>contato@centrah.com.br</p>
+  </div>
+  <div class="contact-detail">
+    <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+    <p>Porto Alegre - RS</p>
+  </div>
+  <div class="contact-detail">
+    <div class="contact-icon"><i class="fas fa-clock"></i></div>
+    <p>Segunda a Sexta: 9h às 18h</p>
+  </div>
+  <div>
+    <h4 style="margin: 30px 0 15px;">Siga-nos</h4>
+    <div class="social-links">
+      <a href="https://www.instagram.com/ag.centrah" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+  </div>
+</div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <h3>Centrah</h3>
-                    <p style="color: #bbb; margin-bottom: 20px;">Conectando marcas e influenciadores para criar campanhas de impacto no mundo digital.</p>
-                    <div class="social-links">
-                        <a href="#"><span>FB</span></a>
-                        <a href="#"><span>IG</span></a>
-                        <a href="#"><span>LI</span></a>
-                        <a href="#"><span>TW</span></a>
-                    </div>
-                </div>
-                <div class="footer-column">
-                    <h3>Links Rápidos</h3>
-                    <ul>
-                        <li><a href="#inicio">Início</a></li>
-                        <li><a href="#servicos">Serviços</a></li>
-                        <li><a href="#sobre">Sobre</a></li>
-                        <li><a href="#cases">Cases</a></li>
-                        <li><a href="#contato">Contato</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Serviços</h3>
-                    <ul>
-                        <li><a href="#">Mapeamento de Influenciadores</a></li>
-                        <li><a href="#">Estratégia de Campanhas</a></li>
-                        <li><a href="#">Gestão de Parcerias</a></li>
-                        <li><a href="#">Análise de Resultados</a></li>
-                        <li><a href="#">Consultoria Criativa</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Contato</h3>
-                    <ul>
-                        <li>contato@centrah.com.br</li>
-                        <li>+55 (11) 99999-9999</li>
-                        <li>Av. Paulista, 1000 - São Paulo, SP</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="copyright">
-                &copy; 2025 Centrah - Todos os direitos reservados
-            </div>
+<footer>
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-column">
+        <h3>Centrah</h3>
+        <p style="color: #bbb; margin-bottom: 20px;">Conectando marcas e influenciadores para criar campanhas de impacto no mundo digital.</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/ag.centrah" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-instagram"></i>
+          </a>
         </div>
-    </footer>
+      </div>
+      <div class="footer-column">
+        <h3>Links Rápidos</h3>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#portfolio">Cases</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Contato</h3>
+        <ul>
+          <li>contato@centrah.com.br</li>
+          <li>+55 (11) 99999-9999</li>
+          <li>Porto Alegre - RS</li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      © 2025 Centrah - Todos os direitos reservados
+    </div>
+  </div>
+</footer>
+    
+    <script src="seu-arquivo.js"></script>
+
+    
 </body>
 </html>
