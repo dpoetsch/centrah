@@ -119,6 +119,7 @@ header {
 display: flex;
     align-items: center;
     gap: 4rem; /* Adiciona um espaço fixo entre o texto e o vídeo */
+    padding-bottom: 0;
 }
 
 .hero-text {
@@ -151,6 +152,7 @@ display: flex;
 }
 
 .phone-screen {
+  
   position: absolute;
   top: 12.3%;
   left: 12%;
@@ -161,12 +163,14 @@ display: flex;
   border-radius: 30px;
   border: 10px solid var(--primary-color);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  
 }
 
 .phone-screen video {
   width: 100%;
   height: 100%;
   object-fit: cover;
+    display: block;
 }
 
 .section {
@@ -688,11 +692,157 @@ footer {
   color: #1f3a93;
 }
 
+.success-message {
+    text-align: center;
+    padding: 30px;
+    background-color: #e7f3fe; /* Fundo azul claro, similar ao do formulário */
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); /* Mesma sombra do formulário */
+    min-height: 200px; /* Garante que a mensagem ocupe um espaço mínimo */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.success-message h3 {
+    color: var(--dark-color); /* Cor do texto consistente com o site */
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-family: 'Swiss 721 BT Condensed', sans-serif; /* Mesma fonte do site */
+    font-weight: 700;
+}
+
+.success-message p {
+    color: #555;
+    font-size: 1.1rem;
+    font-family: 'Swiss 721 BT', sans-serif; /* Mesma fonte do site */
+}
+
+/* Estilo para o link do WhatsApp */
+.whatsapp-link {
+    align-items: center;
+    text-decoration: none;
+    color: var(--dark-color);
+    transition: color 0.3s ease;
+}
+
+.whatsapp-link:hover {
+    color: #1f3a93; /* Mesma cor de hover dos outros ícones */
+}
+
+/* Estilo geral para os ícones na seção de contato */
+.contact-info .contact-icon {
+    font-size: 1.3rem; /* Tamanho consistente para todos os ícones */
+    color: #1f3a93; /* Cor padrão dos ícones (exceto WhatsApp) */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(31, 58, 147, 0.1);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    transition: all 0.3s ease;
+}
+
+/* Estilo específico para o ícone do WhatsApp */
+.contact-info .whatsapp-link .contact-icon {
+    background-color: rgba(31, 58, 147, 0.1); /* azul claro como os demais */
+    color: #1f3a93; /* azul escuro padrão */
+}
+
+.contact-info .whatsapp-link .contact-icon:hover {
+    background-color: rgba(37, 211, 102, 0.2); /* Efeito de hover com fundo verde mais escuro */
+    transform: scale(1.1);
+}
+
+/* Estilo para o texto "Clique para abrir o WhatsApp" */
+.whatsapp-text {
+    font-size: 0.9rem;
+    color: var(--dark-color); /* Cor preta para combinar com o resto da seção */
+    margin-left: 5px;
+    font-style: italic; /* Mantém o itálico para contraste sutil */
+}
+
+/* Ajuste no alinhamento do texto ao lado dos ícones */
+.contact-detail p {
+    margin: 0; /* Remove margens padrão que podem afetar o alinhamento */
+    line-height: 1.5; /* Garante que o texto fique alinhado verticalmente com os outros */
+}
+
+/* Garante que o contêiner .contact-detail tenha o mesmo alinhamento */
+.contact-detail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+    font-size: 1rem;
+    color: var(--dark-color);
+}
+
+/* Estilo para o link do WhatsApp no rodapé */
+.footer-column .whatsapp-link {
+    text-decoration: none;
+    color: #bbb; /* Cor cinza para o número e texto */
+    transition: color 0.3s ease;
+}
+
+.footer-column .whatsapp-link:hover {
+    color: #25D366; /* Cor verde ao passar o mouse */
+}
+
+/* Conteúdo do WhatsApp (ícone, número e texto) */
+.footer-column .whatsapp-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha o conteúdo à esquerda */
+}
+
+/* Contêiner para o ícone e número (na mesma linha) */
+.footer-column .whatsapp-number-container {
+    display: flex;
+    align-items: center; /* Alinha o ícone e o número verticalmente */
+}
+
+/* Ícone do WhatsApp */
+.footer-column .whatsapp-link i {
+    color: #25D366; /* Ícone verde */
+    font-size: 1.2rem;
+    margin-right: 8px; /* Espaço entre o ícone e o número */
+}
+
+/* Número do WhatsApp */
+.footer-column .whatsapp-number {
+    font-size: 1rem;
+    color: #bbb; /* Número em cinza */
+}
+
+/* Texto "Clique para nos chamar no WhatsApp" */
+.footer-column .whatsapp-text {
+    font-size: 0.9rem;
+    color: #bbb; /* Texto em cinza */
+    font-style: italic;
+    margin-top: 2px; /* Espaço entre o número e o texto */
+    display: block; /* Garante que o texto fique em uma nova linha */
+}
+
+.footer-column .whatsapp-link:hover .whatsapp-number,
+.footer-column .whatsapp-link:hover .whatsapp-text {
+    color: #25D366; /* Número e texto ficam verdes ao passar o mouse */
+}
+
+a.btn {
+  text-decoration: none;
+}
+
+
 /* Nova Media Query Combinada */
 @media (max-width: 768px) {
   .hero-content {
     flex-direction: column;
     text-align: center;
+      gap: 2rem; /* diminui o espaço entre texto e vídeo */
+  padding-bottom: 0; /* se necessário */
   }
 
   .hero-text {
@@ -770,6 +920,8 @@ footer {
   .phone-mockup {
     width: 280px;
     height: 500px;
+      margin-bottom: 0; /* garante que não tem espaçamento extra abaixo do vídeo */
+
   }
 
   .section-title h2 {
